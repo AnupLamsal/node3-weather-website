@@ -18,7 +18,7 @@ const forecast = (latitude, longitude, callback) => {
         undefined,
         "It is currently " +
           body.main.temp +
-          " degrees out at given above place in " +
+          " degrees out at given place in " +
           body.sys.country +
           ". The situation is quite " +
           body.weather[0].description +

@@ -20,7 +20,11 @@ const forecast = (latitude, longitude, callback) => {
           body.main.temp +
           " degrees out at given place in " +
           body.sys.country +
-          ". The situation is quite " +
+          ". Max temperature is " +
+          body.main.temp_max +
+          " and min temperture is " +
+          body.main.temp_min +
+          " throughout the day. The situation is quite " +
           body.weather[0].description +
           "."
       );
